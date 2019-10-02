@@ -1,1 +1,31 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
 
+%Includes "References" in the table of contents
+\usepackage[nottoc]{tocbibind}
+
+%Title, date an author of the document
+\title{Bibliography management: BibTeX}
+\author{Share\LaTeX}
+
+%Begining of the document
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\medskip
+
+\section{First Section}
+This document is an example of BibTeX using in bibliography management. Three items are cited: \cite{patchkovskii_2017}. 
+
+\medskip
+
+%Sets the bibliography style to UNSRT and imports the 
+%bibliography file "samples.bib".
+\bibliographystyle{unsrt}
+\bibliography{mybib}
+
+\end{document}
